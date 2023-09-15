@@ -1,9 +1,8 @@
 def all_thing_is_obj(object: any) -> int:
-    obj_type = type(object)
-    if obj_type != int and obj_type != str:
-        print(obj_type.__name__.capitalize(), ":", obj_type)
-    elif obj_type == str:
-        print("Brian is in the kitchen :", obj_type)
-    elif obj_type == int:
+    if isinstance(object, int) is False and isinstance(object, str) is False:
+        print(type(object).__name__.capitalize(), ":", type(object))
+    elif isinstance(object, str):
+        print("Brian is in the kitchen :", type(object))
+    elif isinstance(object, int):
         print("Type not found")
     return 42
