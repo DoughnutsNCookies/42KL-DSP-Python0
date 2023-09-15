@@ -4,9 +4,13 @@ import sys
 def validate_input():
     """
         This function checks if the number of arguments is correct
+        If there is an argument, it returns the argument as text
         If there is no argument, it asks the user to input a text
         If the text is empty, it returns a space (Carriage return)
-        Else it returns the text
+        Else it returns the text with a space at the end (Carriage return)
+
+        Returns:
+            text: the text to count
     """
     try:
         assert (len(sys.argv)) <= 2, "more than one argument is provided"
@@ -31,8 +35,8 @@ def validate_input():
 def main():
     """
         Validates the input first
-        Then increment counters for each type of character
-        Print the results
+        Increment counters for each type of character
+        Prints the results
     """
     input_string = validate_input()
     upper_sum = 0
