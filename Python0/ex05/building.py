@@ -21,8 +21,7 @@ def validate_input():
     if (len(sys.argv)) < 2:
         text = None
         try:
-            while text is None:
-                text = input("What is the text to count?\n")
+            text = input("What is the text to count?\n")
         except EOFError:
             return ""
 
