@@ -3,11 +3,14 @@ import sys
 if len(sys.argv) == 1:
     sys.exit(0)
 
+
 def is_valid(input_str):
     for i, char in enumerate(input_str):
-        if not (char.isdigit() or (char == '-' and i == 0 and len(input_str) > 1)):
+        if not (char.isdigit()
+                or (char == '-' and i == 0 and len(input_str) > 1)):
             return False
     return True
+
 
 try:
     assert len(sys.argv) <= 2, "more than one argument is provided"
