@@ -1,3 +1,7 @@
+"""
+    Init file for schuahpackage.
+"""
+
 from .greet import say_hello
 from .functions import add, sub, mul, div, mod
 
