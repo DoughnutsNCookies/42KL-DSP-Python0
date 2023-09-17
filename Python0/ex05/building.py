@@ -25,8 +25,6 @@ def validate_input():
         except EOFError:
             return ""
 
-        if len(text) == 0:
-            return " "
         return text + " "
     return sys.argv[1]
 
