@@ -6,9 +6,10 @@ ft_dict = {"Hello": "titi!"}
 ft_list[1] = "World!"
 ft_tuple = list(ft_list)
 ft_tuple[1] = "Malaysia"
+ft_tuple = tuple(ft_tuple)
 ft_set.remove("tutu!")
-ft_set.add("Kuala Lumpur")
-ft_dict["Hello"] = "42Kuala Lumpur"
+ft_set.add("Subang Jaya")
+ft_dict["Hello"] = "42 Kuala Lumpur"
 
 print(ft_list)
 print(ft_tuple)
