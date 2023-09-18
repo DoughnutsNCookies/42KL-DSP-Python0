@@ -1,2 +1,2 @@
 # 42KL-Python-DataSciencePiscine
-All projects done during the 42KL Python Data Science Pisince
+Python0 Starting project of the 42KL Python Data Science Pisince
