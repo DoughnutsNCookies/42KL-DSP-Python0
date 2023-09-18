@@ -19,13 +19,9 @@ def validate_input():
         exit()
 
     if (len(sys.argv)) < 2:
-        text = None
-        try:
-            text = input("What is the text to count?\n")
-        except EOFError:
-            return ""
+        print("What is the text to count?")
+        return sys.stdin.readline()
 
-        return text + " "
     return sys.argv[1]
 
 
