@@ -1,5 +1,5 @@
 def all_thing_is_obj(object: any) -> int:
-    if isinstance(object, int) is False and isinstance(object, str) is False:
+    if not isinstance(object, (int, str)):
         print(type(object).__name__.capitalize(), ":", type(object))
     elif isinstance(object, str):
         print(f"{object} is in the kitchen :", type(object))
