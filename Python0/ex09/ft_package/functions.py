@@ -1,8 +1,3 @@
-"""
-    This module contains the basic math functions
-"""
-
-
 def add(num1, num2):
     """
         This function returns the add of two numbers

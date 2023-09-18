@@ -9,7 +9,7 @@ def validate_string(string: str) -> bool:
             True if the string is valid, else False
     """
     for char in string:
-        if not (char.isalpha() or char == ' '):
+        if not (char.isalnum() or char == ' '):
             return False
     return True
 
