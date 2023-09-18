@@ -1,9 +1,5 @@
-"""
-    Init file for schuahpackage.
-"""
-
 from .greet import say_hello
-from .functions import add, sub, mul, div, mod
+from .functions import add, sub, mul, div, mod, count_in_list
 
 
 def main():
@@ -17,6 +13,7 @@ def main():
     mul(1, 2)
     div(1, 2)
     mod(1, 2)
+    count_in_list([1, 2, 3], 1)
 
 
 if __name__ == "__main__":

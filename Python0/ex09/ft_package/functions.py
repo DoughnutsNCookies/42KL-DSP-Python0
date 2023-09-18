@@ -42,3 +42,10 @@ def mod(num1, num2):
     if num2 == 0:
         raise ValueError("Can't divide by zero")
     return num1 % num2
+
+
+def count_in_list(iterable, elem):
+    """
+        Count in list
+    """
+    return len([x for x in iterable if x == elem])
