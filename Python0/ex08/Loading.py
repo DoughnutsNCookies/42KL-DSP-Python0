@@ -11,12 +11,12 @@ def ft_tqdm(iterable):
     start_time = time.time()
 
     # Prints the initial message
-    print(f"0%|{' ' * 100}| 0/{total} [00:00<?, ?it/s]", end="\r")
+    print(f"\r  0%|{' ' * 100}| 0/{total} [00:00<?, ?it/s]", end="")
     for item in iterable:
         yield item
         # Prints the percentage complete
         percentage_complete = (progress / total) * 100
-        message = f"{percentage_complete:.0f}%|"
+        message = f"\r{percentage_complete:3.0f}%|"
 
         # Prints the progress bar
         message += f"{int(percentage_complete) * '█'}"
@@ -57,6 +57,6 @@ def ft_tqdm(iterable):
 
         # Prints the message and carriage return
         # Then increments the progress
-        print(message, end="\r")
+        print(message, end="")
         progress += 1
     print()
