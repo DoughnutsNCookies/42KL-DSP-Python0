@@ -49,6 +49,7 @@ def main():
             digit_sum += 1
         elif char.isspace():
             space_sum += 1
+    print(f"The text contains {len(input_string)} characters:")
     print(f"{upper_sum} upper letters")
     print(f"{lower_sum} lower letters")
     print(f"{punctuation_sum} punctuation marks")
